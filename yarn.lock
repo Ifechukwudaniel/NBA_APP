@@ -5157,6 +5157,11 @@ react-is@^16.8.1, react-is@^16.8.4, react-is@^16.8.6:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.9.0.tgz#21ca9561399aad0ff1a7701c01683e8ca981edcb"
   integrity sha512-tJBzzzIgnnRfEm046qRcURvwQnZVXmuCbscxUO5RWrGTXpon2d4c8mI0D8WE6ydVIm29JiLB6+RslkIvym9Rjw==
 
+react-native-contacts@^5.0.2:
+  version "5.0.2"
+  resolved "https://registry.yarnpkg.com/react-native-contacts/-/react-native-contacts-5.0.2.tgz#8e4d98f363724cd0e815894fdade7ad2d6ca344b"
+  integrity sha512-CEeUwg7r8lgHC95LaoH6RKeZ20P1yMgxSRukDijjQOLTXdEGDy24lXXKBwmFX1pbPZDfDcBIBSwiEsFikeTGXg==
+
 react-native-image-picker@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/react-native-image-picker/-/react-native-image-picker-1.0.2.tgz#8b0ffe89d7dd97bef1f7e317f313f90549b126b3"
