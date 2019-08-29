@@ -1,7 +1,7 @@
 
 
 import React, {Component} from 'react';
-import { View,Text, StyleSheet} from 'react-native';
+import { View,Text, StyleSheet, Animated} from 'react-native';
 import DeviceInfo from "react-native-device-info"
 import Dimension from './src/Dimension';
 export default class App extends Component {     
@@ -15,7 +15,7 @@ export default class App extends Component {
     return (
       <View style={styles.container}>
         <Text> Am Working ooo</Text>
-      </View>
+      </View>  
        
     )
   }
