@@ -2,13 +2,13 @@
 
 import React, {Component} from 'react';
 import { View,Text, StyleSheet, Animated} from 'react-native';
-import DeviceInfo from "react-native-device-info"
-import Dimension from './src/Dimension';
 export default class App extends Component {     
   render() {    
     return (
       <View style={styles.container}>
-        <Text> Am Working ooo</Text>
+        <View style={styles.redSquare}>
+            
+        </View>
       </View>   
     )
   }
@@ -23,4 +23,8 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
   },
+  redSquare:{
+    backgroundColor:"red",
+    padding:40,
+  }
 });

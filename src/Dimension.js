@@ -2,7 +2,7 @@
 
 import React, {Component} from 'react';
 import { View,Text, StyleSheet, Platform, Dimensions} from 'react-native';
-import SuperText from "./src/widget/SuperText"
+import SuperText from './widget/SuperText'
 
 
 
