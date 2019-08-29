@@ -80,7 +80,17 @@ project.ext.react = [
     enableHermes: false,  // clean and rebuild if changing
 ]
 
+project.ext.vectoricons = [
+    iconFontNames: [ 'MaterialIcons.ttf', 'EvilIcons.ttf' ]
+]
+
+
 apply from: "../../node_modules/react-native/react.gradle"
+
+
+
+
+apply from: "../../node_modules/react-native-vector-icons/fonts.gradle"
 
 /**
  * Set this to true to create two separate APKs instead of one:
@@ -191,7 +201,8 @@ dependencies {
     implementation project(':react-native-contacts')
     implementation project(':react-native-image-picker')
     implementation fileTree(dir: "libs", include: ["*.jar"])
-    implementation "com.facebook.react:react-native:+"  // From node_modules
+    implementation "com.facebook.react:react-native:+"  
+    implementation project(':react-native-vector-icons')
 
     if (enableHermes) {
       def hermesPath = "../../node_modules/hermesvm/android/";
