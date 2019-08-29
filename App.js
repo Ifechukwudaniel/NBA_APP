@@ -1,23 +1,47 @@
 
 
 import React, {Component} from 'react';
-import { View,Text, StyleSheet} from 'react-native';
+import { View,Text, StyleSheet, Platform, Dimensions} from 'react-native';
 import SuperText from "./src/widget/SuperText"
 
 
 
-export default class App extends Component {
+export default class App extends Component {  
+  checkSupport = ()=>{
+    if(Platform.OS==="ios") {
+        if (Platform.Version>12.1) {
+           return false
+        }
+    } else {
+      if(Platform.OS==="android"){
+        if (Platform.Version>28) {
+          return false
+        }
+      }
+    }
+    return true
+  }
   render() {
+    //console.warn(Platform.Version);
+    console.warn(Dimensions.get("screen"))
+    console.warn(Dimensions.get("window"));
+    
     return (
       <View style={styles.container}>
+      {this.checkSupport() ?
         <SuperText
-          style={{
-            backgroundColor:"green"
-          }}
+          style={styles.PlatformSelect}
         >
-            Just Testing react Native 
+          {Platform.OS ==="android" ?
+           " Welcome to your android device" 
+          :
+          " Ios My foot"}
         </SuperText>
-     </View>
+       : 
+       <Text>  This device is not supported</Text>
+       }
+       </View>
+       
     )
   }
 }
@@ -30,5 +54,15 @@ const styles = StyleSheet.create({
     alignContent: 'center',
     justifyContent: 'center',
     alignItems: 'center',
+  },
+  PlatformSelect:{
+    ...Platform.select({
+      ios:{
+        backgroundColor:"red"
+      },
+      android:{
+        backgroundColor:"black"
+      }
+    })
   }
 });
