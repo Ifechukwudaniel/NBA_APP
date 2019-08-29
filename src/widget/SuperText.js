@@ -1,10 +1,12 @@
 import React from "react";
 import {StyleSheet, Text,View} from "react-native"
 
-const SuperText = ()=>{
+const SuperText = (props)=>{
      return(
        <View>
-         <Text style={styles.superText}> Just a test</Text>
+         <Text  style={[styles.superText,props.style ]}> 
+           {props.children}
+         </Text>
       </View>
      )
 }
@@ -14,8 +16,8 @@ const styles = StyleSheet.create({
     backgroundColor:"blue",
     fontSize:20,
     color:"white",
-    padding:10,
-    width:300
+    padding:"5%",
+    width:"100%"
   }
 })
 
