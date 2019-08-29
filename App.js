@@ -2,7 +2,7 @@
 
 import React, {Component} from 'react';
 import { View,Text, StyleSheet} from 'react-native';
-import Icon  from "./src/Icon"
+import SuperText from "./src/widget/SuperText"
 
 
 
@@ -10,7 +10,7 @@ export default class App extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Icon/>
+        <SuperText/>
      </View>
     )
   }
