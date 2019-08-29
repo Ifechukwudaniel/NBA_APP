@@ -1,46 +1,21 @@
 
 
 import React, {Component} from 'react';
-import { View,Text, StyleSheet, Platform, Dimensions} from 'react-native';
-import SuperText from "./src/widget/SuperText"
+import { View,Text, StyleSheet} from 'react-native';
+import DeviceInfo from "react-native-device-info"
+import Dimension from './src/Dimension';
+export default class App extends Component {     
+  render() {    
+   DeviceInfo.getBatteryLevel()
+   .then(batteryLevel=>{
+      console.warn(batteryLevel)
+   })
 
-
-
-export default class App extends Component {  
-  checkSupport = ()=>{
-    if(Platform.OS==="ios") {
-        if (Platform.Version>12.1) {
-           return false
-        }
-    } else {
-      if(Platform.OS==="android"){
-        if (Platform.Version>28) {
-          return false
-        }
-      }
-    }
-    return true
-  }
-  render() {
-    //console.warn(Platform.Version);
-    console.warn(Dimensions.get("screen"))
-    console.warn(Dimensions.get("window"));
-    
+   console.warn(DeviceInfo.isLandscape());
     return (
       <View style={styles.container}>
-      {this.checkSupport() ?
-        <SuperText
-          style={styles.PlatformSelect}
-        >
-          {Platform.OS ==="android" ?
-           " Welcome to your android device" 
-          :
-          " Ios My foot"}
-        </SuperText>
-       : 
-       <Text>  This device is not supported</Text>
-       }
-       </View>
+        <Text> Am Working ooo</Text>
+      </View>
        
     )
   }
@@ -55,14 +30,4 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
   },
-  PlatformSelect:{
-    ...Platform.select({
-      ios:{
-        backgroundColor:"red"
-      },
-      android:{
-        backgroundColor:"black"
-      }
-    })
-  }
 });

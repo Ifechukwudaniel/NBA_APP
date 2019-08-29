@@ -27,5 +27,8 @@
   },
   "jest": {
     "preset": "react-native"
-  }
+  },
+  "main": "index.js",
+  "author": "CodesDaniel <mailidanielifechukwu@gmail.com>",
+  "license": "MIT"
 }
