@@ -3,8 +3,6 @@ import { View,Text, StyleSheet} from 'react-native';
 import Icon from "react-native-vector-icons/dist/EvilIcons"
 import ImagePicker from "react-native-image-picker"
 
-
-
 export default class IconComponent extends Component {
   render() {
     return (
