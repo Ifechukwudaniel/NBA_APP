@@ -41,6 +41,25 @@ export default class App extends Component {
     //  } else {
     //     alert("no permission")
     //  }
+    if(response===true){
+      // Contacts.openContactForm({
+      //   givenName:"testing",
+      //    phoneNumbers:[{
+      //      label:"testing",
+      //     number:"08034055074"
+      //    }]
+      // }, (err, contact)=>{
+      //   if(err)
+      //   console.warn(err)
+      // console.warn(contact)
+      // })
+      Contacts.openExistingContact({recordID:"1", givenName:"Daniel"}, (err, contact)=>{
+        console.warn(contact)
+      })
+    }
+    else{
+      alert("No permission")
+    }
       
   })
   }
