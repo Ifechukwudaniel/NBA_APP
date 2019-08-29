@@ -5,8 +5,12 @@ import { View,Text,Button, StyleSheet, Animated, Easing} from 'react-native';
 export default class AnimOne extends Component {     
   constructor(props) {
     super(props)
+    // this.state ={
+    //   redSquare : new Animated.ValueXY(0,0)
+    // }
+
     this.state ={
-      redSquare : new Animated.ValueXY(0,0)
+      redSquare : new Animated.Value(0)
     }
     
     // this.redSquare= new Animated.ValueXY(0,0)
@@ -21,23 +25,35 @@ export default class AnimOne extends Component {
   //   }).start()
   // }
 
-   animateSquare = ()=>{
-      Animated.timing(
-           this.state.redSquare , {
-              toValue:{x:300, y:300},
-              duration:1000,
-              delay:500,
-              easing:Easing.bounce
-           }
-      ).start()
-   }
+  //  animateSquare = ()=>{
+  //     Animated.timing(
+  //          this.state.redSquare , {
+  //             toValue:{x:300, y:300},
+  //             duration:1000,
+  //             delay:500,
+  //             easing:Easing.bounce
+  //          }
+  //     ).start()
+  //  }
+
+  animateSquare = ()=>{
+    Animated.timing(
+         this.state.redSquare , {
+            toValue:1,
+            duration:1000,
+            delay:500,
+         }
+    ).start()
+ }
   
   
   render() {    
     return (
       <View style={styles.container}>
       <Animated.View
-       style={this.state.redSquare.getLayout()}>
+       style={{
+          opacity: this.state.redSquare
+       }}>
           <View style={styles.redSquare}>
 
           </View>
