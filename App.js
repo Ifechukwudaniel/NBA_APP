@@ -1,7 +1,8 @@
 
 
 import React, {Component} from 'react';
-import { View,Text, StyleSheet, Image, Button, Platform, PermissionsAndroid} from 'react-native';
+import { View,Text, StyleSheet} from 'react-native';
+import Icon  from "./src/Icon"
 
 
 
@@ -9,7 +10,7 @@ export default class App extends Component {
   render() {
     return (
       <View style={styles.container}>
-      <Text>  Test </Text>
+        <Icon/>
      </View>
     )
   }
