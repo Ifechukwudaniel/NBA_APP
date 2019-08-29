@@ -53,9 +53,10 @@ export default class App extends Component {
       //   console.warn(err)
       // console.warn(contact)
       // })
-      Contacts.openExistingContact({recordID:"1", givenName:"Daniel"}, (err, contact)=>{
-        console.warn(contact)
-      })
+      // Contacts.openExistingContact({recordID:"1", givenName:"Daniel"}, (err, contact)=>{
+      //   console.warn(contact)
+      // })
+      
     }
     else{
       alert("No permission")
