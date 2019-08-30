@@ -2,11 +2,12 @@
 
 import React, {Component} from 'react';
 import { View,Text, StyleSheet,} from 'react-native';
-export default class Auth extends Component {     
+export default class GamesComponent extends Component {     
   render() {    
+     const Nav = RootNavigator()
     return (
-      <View style={styles.container}>
-          
+      <View>
+        <Text> The Games Component</Text>
       </View>   
     )
   }

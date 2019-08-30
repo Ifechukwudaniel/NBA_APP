@@ -2,12 +2,11 @@
 
 import React, {Component} from 'react';
 import { View,Text, StyleSheet,} from 'react-native';
-export default class Games extends Component {     
+export default class NewsComponent extends Component {     
   render() {    
-     const Nav = RootNavigator()
     return (
-      <View style={styles.container}>
-          
+      <View>
+          <Text> The News Components</Text>
       </View>   
     )
   }

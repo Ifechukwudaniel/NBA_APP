@@ -2,11 +2,11 @@
 
 import React, {Component} from 'react';
 import { View,Text, StyleSheet,} from 'react-native';
-export default class App extends Component {     
+export default class AuthComponent extends Component {     
   render() {    
     return (
-      <View style={styles.container}>
-          <Nav/>
+      <View>
+        <Text> Auth Component Here</Text>
       </View>   
     )
   }
