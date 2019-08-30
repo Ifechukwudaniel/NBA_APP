@@ -3,12 +3,13 @@
 import React, {Component} from 'react';
 import { View,Text, StyleSheet, Animated} from 'react-native';
 // import AnimOne  from "./src/AnimOne"
-import AnimTwo from "./src/AnimTwo"
+// import AnimTwo from "./src/AnimTwo"
+import AnimThree from "./src/AnimThree"
 export default class App extends Component {     
   render() {    
     return (
       <View style={styles.container}>
-        <AnimTwo/>
+        
       </View>   
     )
   }
