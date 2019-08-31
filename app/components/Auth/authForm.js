@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import {View, Image , Text, TextInput, StyleSheet, Button, Platform} from "react-native"
 import Input from '../../../utils/forms/input'
 //import console = require('console');
+import ValidationRules from "../../../utils/forms/validation.rule"
 
 export default class AuthForm extends Component {
     state={
@@ -24,7 +25,9 @@ export default class AuthForm extends Component {
                 valid:false,
                 type:'textinput',
                 rules:{
-                   isRequired:true
+                   isRequired:true,
+                   minLength:7,
+                   maxLength:100
                  }
             },
             confirmPassword:{
@@ -32,7 +35,7 @@ export default class AuthForm extends Component {
                 valid:false,
                 type:'textinput',
                 rules:{
-                   confirmPass:'password'
+                   confirmPassword:'password'
                  }
             }
         }
@@ -81,6 +84,9 @@ export default class AuthForm extends Component {
        this.setState({hasError:false})
        let formCopy = this.state.form
        formCopy[inputName].value = e
+       let rules = formCopy[inputName].rules;
+        let valid= ValidationRules(e,rules, formCopy)
+        formCopy[inputName].valid=valid
        this.setState({form:formCopy})
     }
     
