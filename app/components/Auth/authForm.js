@@ -2,7 +2,8 @@ import React, { Component } from 'react'
 import {View, Image , Text, TextInput, StyleSheet, Button, Platform} from "react-native"
 import Input from '../../../utils/forms/input'
 import ValidationRules from "../../../utils/forms/validation.rule"
-
+import {arrangeForm} from "./formUtil"
+// import console = require('console');
 export default class AuthForm extends Component {
     state={
         type:"Login",
@@ -26,7 +27,7 @@ export default class AuthForm extends Component {
                 rules:{
                    isRequired:true,
                    minLength:7,
-                   maxLength:100
+                   maxLength:40
                  }
             },
             confirmPassword:{
@@ -50,7 +51,26 @@ export default class AuthForm extends Component {
     )
     
     handleSubmit = ()=>{
-      alert("bbbbbdbb")
+         const {form, type} = this.state
+         let isFormValid = false
+         let newFormObject = {}
+         let userInfo={}
+         if (type==="Login") {    
+            let  newForm = arrangeForm(form)
+            if(!newForm.hasOwnProperty("email") || !newForm.hasOwnProperty("password"))this.setState({hasError:true})
+
+            else console.warn("Login .....",newForm);
+         }
+         else{
+            let  newForm = arrangeForm(form)
+                if(!newForm.hasOwnProperty("email") || !newForm.hasOwnProperty("password"))  this.setState({hasError:true})
+
+                if(newForm['confirmPassword'] !== newForm['password']) this.setState({hasError:true})
+
+                if (!this.state.hasError) {
+                    userInfo= {email:newForm.email,password:newForm.password}
+                }
+         }
     }
 
     changeFormType=()=>{
