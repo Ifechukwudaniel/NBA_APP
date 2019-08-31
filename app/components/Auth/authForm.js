@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import {View, Image , Text, TextInput, StyleSheet, Button, Platform} from "react-native"
 import Input from '../../../utils/forms/input'
-//import console = require('console');
 import ValidationRules from "../../../utils/forms/validation.rule"
 
 export default class AuthForm extends Component {
