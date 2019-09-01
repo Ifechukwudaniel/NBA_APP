@@ -139,7 +139,10 @@ export default class AuthForm extends Component {
                 {this.formHasErrors()}
             <View >
                <View style={styles.button}>
-                   <Button  title={this.state.action} onPress={this.handleSubmit}/>
+                   <Button 
+                    title={this.state.action} 
+                    rounded
+                    onPress={this.handleSubmit}/>
                 </View>
                 <View style={styles.button} >
                    <Button title={this.state.actionMode}

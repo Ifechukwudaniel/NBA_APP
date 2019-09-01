@@ -1,5 +1,5 @@
 import React from "react"
-import { Text , View , TextInput, Picker, StyleSheet } from 'react-native';
+import { Text , View , TextInput, Picker, StyleSheet,P } from 'react-native';
 
 const input =(props)=>{
   let template=null
@@ -23,10 +23,11 @@ const styles= StyleSheet.create({
          textDecorationColor:"#fff" ,
          fontWeight:"bold",
          fontStyle:"normal",
-         borderBottomColor:"#fff",
-         borderBottomWidth:1,
+         borderColor:"#fff",
+         borderBottomWidth:0.5,
          marginTop:10,
-         width:'100%'
+         width:'100%',
+         borderRadius:5
      },
 })
 export default input

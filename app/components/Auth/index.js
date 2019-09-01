@@ -4,10 +4,17 @@ import React, {Component} from 'react';
 import { View,Text, StyleSheet,  Button,ScrollView, ActivityIndicator} from 'react-native';
 import AuthLogo from "./authlogo"
 import AuthForm from "./authForm"
-export default class AuthComponent extends Component {   
+import {connect} from "react-redux"
+import {signIn} from "../../store/actions"
+// import console = require('console');
+class AuthComponent extends Component {   
   state={
      loading:false
   } 
+  componentDidMount(){
+     console.log(this.props)
+     this.props.dispatch(signIn())
+  }
 
   goNext=()=>{
     this.props.navigation.navigate("App")
@@ -48,3 +55,9 @@ const styles = StyleSheet.create({
      alignSelf:"center"
   }
 });
+
+const mapStateToProp= (state)=>({
+    user:state.user
+})
+
+export default   connect(mapStateToProp)(AuthComponent)
