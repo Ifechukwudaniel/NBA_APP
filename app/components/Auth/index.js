@@ -5,7 +5,6 @@ import { View,Text, StyleSheet,  Button,ScrollView, ActivityIndicator} from 'rea
 import AuthLogo from "./authlogo"
 import AuthForm from "./authForm"
 import {connect} from "react-redux"
-import {signIn} from "../../store/actions"
 // import console = require('console');
 class AuthComponent extends Component {   
   state={
@@ -13,7 +12,6 @@ class AuthComponent extends Component {
   } 
   componentDidMount(){
      console.log(this.props)
-     this.props.dispatch(signIn())
   }
 
   goNext=()=>{

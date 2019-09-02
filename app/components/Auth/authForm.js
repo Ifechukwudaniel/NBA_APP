@@ -3,8 +3,11 @@ import {View, Image , Text, TextInput, StyleSheet, Button, Platform} from "react
 import Input from '../../../utils/forms/input'
 import ValidationRules from "../../../utils/forms/validation.rule"
 import {arrangeForm} from "./formUtil"
-// import console = require('console');
-export default class AuthForm extends Component {
+import {connect} from "react-redux"
+import {signIn, signUp} from "../../store/actions/user_action"
+import {bindActionCreators } from "redux"
+//import console = require('console');
+class AuthForm extends Component {
     state={
         type:"Login",
         action:"Login",
@@ -58,17 +61,27 @@ export default class AuthForm extends Component {
          if (type==="Login") {    
             let  newForm = arrangeForm(form)
             if(!newForm.hasOwnProperty("email") || !newForm.hasOwnProperty("password"))this.setState({hasError:true})
-
-            else console.warn("Login .....",newForm);
+            else  this.props.signIn(newForm)
          }
          else{
             let  newForm = arrangeForm(form)
-                if(!newForm.hasOwnProperty("email") || !newForm.hasOwnProperty("password"))  this.setState({hasError:true})
+                if(!newForm.hasOwnProperty("email") || !newForm.hasOwnProperty("password")) {
+                    this.setState({hasError:true},()=>{
+                        if(newForm['password']===newForm['confirmPassword']){
+                            this.setState({hasError:true},()=>{
 
-                if(newForm['confirmPassword'] !== newForm['password']) this.setState({hasError:true})
-
-                if (!this.state.hasError) {
-                    userInfo= {email:newForm.email,password:newForm.password}
+                            })
+                        }
+                    })
+                   
+                }
+                else if(newForm['password']!==newForm['confirmPassword']){
+                    this.setState({hasError:true},()=>{
+                    })
+                }
+                else{
+                    userInfo={"email":newForm.email,"password":newForm.password}
+                  this.props.signUp(userInfo)
                 }
          }
     }
@@ -157,6 +170,19 @@ export default class AuthForm extends Component {
         )
     }
 }
+
+const mapStateToProps=state=>{
+    console.log(state)
+    return{
+        User:state.User
+    }
+}
+
+const mapDispatchToProps=dispatch=>{
+    return bindActionCreators({signIn,signUp}, dispatch)
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(AuthForm)
 
 const styles= StyleSheet.create({
     errorContainer:{
