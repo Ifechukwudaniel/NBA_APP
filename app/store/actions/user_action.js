@@ -1,5 +1,5 @@
-import { SIGN_IN, SIGN_UP } from "../types";
-import {SIGN_IN_URL, SIGN_UP_URL} from "../../../utils/config"
+import { SIGN_IN, SIGN_UP ,AUTO_SIGN_IN} from "../types";
+import {SIGN_IN_URL, SIGN_UP_URL,REFRESH_TOKEN_URL} from "../../../utils/config"
 import axios from "axios"
 
 //import console = require("console");
@@ -43,4 +43,25 @@ export const signIn=(data)=>{
          type:SIGN_IN,
          payload:request
      }
+}
+
+export const autoSignIn=(refreshToken)=>{
+    const request=  axios.post(REFRESH_TOKEN_URL, {
+        refresh_token:refreshToken,
+        grant_type:"refresh_token"
+    },{
+        headers:{
+            'Content-Type': 'application/json'
+       },
+     })
+     .then(response=>{
+        return response.data
+    }).catch(e=>{
+        return e
+    })
+    return {
+        type:AUTO_SIGN_IN,
+        payload:request
+    }
+
 }

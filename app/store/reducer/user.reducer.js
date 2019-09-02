@@ -1,8 +1,8 @@
 import {
    SIGN_IN,
-   SIGN_UP
+   SIGN_UP,
+   AUTO_SIGN_IN
 } from "../types"
-//import console = require("console");
 
 export default function Users(state ={} , action){
     switch (action.type) {
@@ -24,6 +24,15 @@ export default function Users(state ={} , action){
                  refToken:action.payload.refreshToken ||false,                
                 }
           }
+          case AUTO_SIGN_IN:
+                return {
+                    ...state,
+                    auth:{
+                     uid:action.payload.user_id || false,
+                     token:action.payload.access_token ||false,
+                     refToken:action.payload.refresh_token ||false,                
+                    }
+              }
         default:
             return state
     }

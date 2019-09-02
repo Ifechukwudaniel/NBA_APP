@@ -5,13 +5,30 @@ import { View,Text, StyleSheet,  Button,ScrollView, ActivityIndicator} from 'rea
 import AuthLogo from "./authlogo"
 import AuthForm from "./authForm"
 import {connect} from "react-redux"
-import {getTokens} from '../../../utils/config'
+import {getTokens,setTokens} from '../../../utils/config'
+import {autoSignIn} from "../../store/actions/user_action"
+import {bindActionCreators} from "redux"
 // import console = require('console');
+
 class AuthComponent extends Component {   
   state={
      loading:false
   } 
-  
+  componentDidMount(){
+     this.setState({loading:true})
+     getTokens((value)=>{
+        if(value[1][1]==null){this.setState({loading:false}) 
+        return
+        }
+        this.props.autoSignIn(value[1][1]).then(()=>{
+         if(!this.props.Users.auth.uid){
+            this.setState({loading:false})  
+            return  
+         }
+         this.goNext() 
+      })
+     })
+  }
   
   goNext=()=>{
     this.props.navigation.navigate("App")
@@ -53,8 +70,16 @@ const styles = StyleSheet.create({
   }
 });
 
-const mapStateToProp= (state)=>({
-    user:state.user
-})
 
-export default   connect(mapStateToProp)(AuthComponent)
+const mapStateToProps=(state)=>{
+   console.log(state)
+   return {
+      Users:state.Users
+   }
+}
+
+const mapDispatchToProps=(dispatch)=>{
+   return bindActionCreators({autoSignIn},dispatch)
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(AuthComponent)
