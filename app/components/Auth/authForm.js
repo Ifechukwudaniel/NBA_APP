@@ -4,6 +4,7 @@ import Input from '../../../utils/forms/input'
 import ValidationRules from "../../../utils/forms/validation.rule"
 import {arrangeForm} from "./formUtil"
 import {connect} from "react-redux"
+import { setTokens} from "../../../utils/config"
 import {signIn, signUp} from "../../store/actions/user_action"
 import {bindActionCreators } from "redux"
 //import console = require('console');
@@ -12,6 +13,7 @@ class AuthForm extends Component {
         type:"Login",
         action:"Login",
         actionMode:" I want to Register ",
+        isChanged:false,
         hasError:false,
         form:{
             email:{
@@ -44,6 +46,7 @@ class AuthForm extends Component {
         }
     }
 
+
     formHasErrors=()=>(
         this.state.hasError ?
         <View style ={styles.errorContainer}> 
@@ -61,7 +64,12 @@ class AuthForm extends Component {
          if (type==="Login") {    
             let  newForm = arrangeForm(form)
             if(!newForm.hasOwnProperty("email") || !newForm.hasOwnProperty("password"))this.setState({hasError:true})
-            else  this.props.signIn(newForm)
+            else  {
+                this.props.signIn(newForm)
+                .then(()=>{
+                  this.manageAccess()
+                })
+            }
          }
          else{
             let  newForm = arrangeForm(form)
@@ -81,10 +89,24 @@ class AuthForm extends Component {
                 }
                 else{
                     userInfo={"email":newForm.email,"password":newForm.password}
-                  this.props.signUp(userInfo)
+                     this.props.signUp(userInfo).then(()=>{
+                       this.manageAccess()
+                     })
                 }
          }
     }
+
+
+
+   manageAccess = ()=>{
+       if(!this.props.Users.auth.uid){
+        this.setState({hasError:true})
+       } else{
+           setTokens(this.props.Users.auth,()=>{
+               this.props.goNext()
+           })
+        }       
+   }
 
     changeFormType=()=>{
         const form= this.state
@@ -172,9 +194,8 @@ class AuthForm extends Component {
 }
 
 const mapStateToProps=state=>{
-    console.log(state)
     return{
-        User:state.User
+        Users:state.Users
     }
 }
 

@@ -5,15 +5,14 @@ import { View,Text, StyleSheet,  Button,ScrollView, ActivityIndicator} from 'rea
 import AuthLogo from "./authlogo"
 import AuthForm from "./authForm"
 import {connect} from "react-redux"
+import {getTokens} from '../../../utils/config'
 // import console = require('console');
 class AuthComponent extends Component {   
   state={
      loading:false
   } 
-  componentDidMount(){
-     console.log(this.props)
-  }
-
+  
+  
   goNext=()=>{
     this.props.navigation.navigate("App")
   }
