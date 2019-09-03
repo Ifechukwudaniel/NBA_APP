@@ -7,6 +7,7 @@ import {
     createMaterialTopTabNavigator,
 } from "react-navigation"
 import { Platform } from 'react-native';
+import  Icon from 'react-native-vector-icons'
 
 //screen
 
@@ -41,8 +42,18 @@ const NewsStack=createStackNavigator({
 
 
 const AppStack =  createBottomTabNavigator({
-    News:NewsStack,
-    Games:GamesStack
+    News:{
+      screen:NewsStack,
+      navigationOptions:{
+
+      }
+    },
+    Games:{
+        screen:GamesStack,
+        navigationOptions:{
+            tabBarIcon:(<t></t>)
+        }
+      }
 })
 
 const AuthStack = createStackNavigator({
