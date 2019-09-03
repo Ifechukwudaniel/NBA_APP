@@ -15,6 +15,7 @@ import Games from "./components/Games"
 import GamesArticle from "./components/Games/GameArticle"
 import News from "./components/News"
 import NewArticle from "./components/News/NewArticle"
+import Logo from "../utils/Logo"
 
 const headerConf = {
     headerLayoutPreset:"center",
@@ -22,7 +23,7 @@ const headerConf = {
         headerStyle:{
             backgroundColor: "#001338",
         },
-        headerTitle:"Text",
+        headerTitle:Logo,
         headerTintColor:"white"
     }
 }
