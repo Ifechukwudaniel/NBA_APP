@@ -2,7 +2,13 @@
 
 import React, {Component} from 'react';
 import { View,Text, StyleSheet,} from 'react-native';
-export default class NewsComponent extends Component {     
+import {connect} from "react-redux"
+import { getAllNews } from '../../store/actions/news.actions';
+
+ class NewsComponent extends Component {     
+  componentDidMount(){
+   this.props.dispatch(getAllNews())
+  }
   render() {    
     return (
       <View>
@@ -19,3 +25,12 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
   }
 });
+
+
+const mapStateToProps=state=>{
+  return{
+    News:state.News
+  }
+}
+
+export default connect(mapStateToProps)(NewsComponent)

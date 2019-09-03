@@ -1,7 +1,7 @@
 import {
    SIGN_IN,
    SIGN_UP,
-   AUTO_SIGN_IN
+   AUTO_SIGN_IN,
 } from "../types"
 
 export default function Users(state ={} , action){
