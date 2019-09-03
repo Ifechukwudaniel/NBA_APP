@@ -8,6 +8,7 @@ import {connect} from "react-redux"
 import {getTokens,setTokens} from '../../../utils/config'
 import {autoSignIn} from "../../store/actions/user_action"
 import {bindActionCreators} from "redux"
+import Preloader from '../../../utils/Preloder';
 // import console = require('console');
 
 class AuthComponent extends Component {   
@@ -45,9 +46,7 @@ class AuthComponent extends Component {
     const {loading} = this.state
     if (loading) {
        return (
-         <View style={styles.loading}>
-            <ActivityIndicator size="large"/>
-         </View>
+       <Preloader/>
        )
     }
     else{

@@ -5,7 +5,7 @@ export const News = (state ={} , action) => {
         case GET_ALL_NEWS:
             return {
                 ...state,
-                News:action.payload ||false
+                  stories:action.payload ||false
             }
         default:
             return {

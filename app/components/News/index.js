@@ -1,19 +1,30 @@
 
 
 import React, {Component} from 'react';
-import { View,Text, StyleSheet,} from 'react-native';
+import { View,Text, StyleSheet,ScrollView, Image,TouchableOpacity, ActivityIndicator} from 'react-native';
 import {connect} from "react-redux"
 import { getAllNews } from '../../store/actions/news.actions';
+import Preloader from '../../../utils/Preloder';
 
  class NewsComponent extends Component {     
   componentDidMount(){
    this.props.dispatch(getAllNews())
   }
+  
+  renderArticles=(news)=>(
+    news.stories?
+      news.stories.map(story=>{
+         return(
+           <Text key={story.id}>hdwhdwudhwd</Text>
+         )
+      })
+    : <Preloader/>
+  )
   render() {    
     return (
-      <View>
-          <Text> The News Components</Text>
-      </View>   
+        <ScrollView style={{backgroundColor:"#f0f0f0"}}>
+            {this.renderArticles(this.props.News)}
+        </ScrollView>
     )
   }
 }
