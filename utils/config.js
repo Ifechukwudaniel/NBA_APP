@@ -1,4 +1,5 @@
 import AsyncStorage from "@react-native-community/async-storage"
+//import console = require("console");
 
 export const EmailRegex= /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
 export const API_KEY="AIzaSyAfH7cxQfpNnmL8afesKrdre1xf6HeoQ2E"
@@ -8,6 +9,7 @@ export const SIGN_UP_URL=`https://identitytoolkit.googleapis.com/v1/accounts:sig
 export const REFRESH_TOKEN_URL=`https://securetoken.googleapis.com/v1/token?key=${API_KEY}`
 
 export const  setTokens=(value,cb)=>{
+    console.log("storing ...")
      const date = new Date()
      const exp =  date.getTime()+(3600*100)
     AsyncStorage.multiSet([

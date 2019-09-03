@@ -4,7 +4,7 @@ import {
     createStackNavigator, 
     createBottomTabNavigator,
     createSwitchNavigator,
-    createMaterialTopTabNavigator
+    createMaterialTopTabNavigator,
 } from "react-navigation"
 import { Platform } from 'react-native';
 
@@ -17,13 +17,13 @@ import News from "./components/News"
 
 const AppStack =  createBottomTabNavigator({
     Games:Games,
-    News:News
+    News:News,
 })
 
 const AuthStack = createStackNavigator({
    SignIn:SignIn
 }, {
-    headerMode:"none"
+    headerMode:"none",
 })
 
 

@@ -7,7 +7,6 @@ import {connect} from "react-redux"
 import { setTokens} from "../../../utils/config"
 import {signIn, signUp} from "../../store/actions/user_action"
 import {bindActionCreators } from "redux"
-//import console = require('console');
 class AuthForm extends Component {
     state={
         type:"Login",
@@ -68,6 +67,7 @@ class AuthForm extends Component {
                 this.props.signIn(newForm)
                 .then(()=>{
                   this.manageAccess()
+                  
                 })
             }
          }
