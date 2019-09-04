@@ -12,7 +12,7 @@ export default class NewArticle extends Component {
   render() {    
     const params = this.props.navigation.state.params
     return (
-    <ScrollView style={styles.cardContainer}>
+    <ScrollView>
        <Image
           style={{height:250}}
           source={{uri: params.image}}
@@ -49,9 +49,6 @@ const styles = StyleSheet.create({
     fontFamily: 'Roboto-Light',
     color:"#696969",
     fontSize:10,
-  },
-  cardContainer:{
-   padding:10
   },
   contentText:{
    fontFamily:"Roboto-Light",
