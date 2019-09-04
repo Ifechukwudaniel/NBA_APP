@@ -1,7 +1,9 @@
 import React, {Component} from 'react';
 import { View,Text, StyleSheet,} from 'react-native';
-export default class NewArticle extends Component {     
+export default class NewArticle extends Component { 
+
   render() {    
+    console.warn(this.props)
     return (
       <View>
         <Text> The New NewArticle</Text>

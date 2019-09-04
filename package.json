@@ -37,6 +37,11 @@
   "jest": {
     "preset": "react-native"
   },
+  "rnpm":{
+       "assets":[
+         "./assets/Fonts/"
+       ]
+  },
   "main": "index.js",
   "author": "CodesDaniel <mailidanielifechukwu@gmail.com>",
   "license": "MIT"

@@ -5,6 +5,8 @@ import { View,Text, StyleSheet,ScrollView, Image,TouchableOpacity, ActivityIndic
 import {connect} from "react-redux"
 import { getAllNews } from '../../store/actions/news.actions';
 import Preloader from '../../../utils/Preloder';
+import moment  from 'moment';
+
 
  class NewsComponent extends Component {     
   componentDidMount(){
@@ -15,7 +17,14 @@ import Preloader from '../../../utils/Preloder';
     news.stories?
       news.stories.map(story=>{
          return(
-          <TouchableOpacity key={story.id} style={styles.cardContainer}> 
+          <TouchableOpacity 
+          key={story.id} style={styles.cardContainer}
+           onPress={
+            ()=>  this.props.navigation.navigate("NewArticle",{
+               ...story
+             })
+           }
+          > 
             <View>
               <Image
                style={{height:150, justifyContent:"space-around"}} 
@@ -28,6 +37,7 @@ import Preloader from '../../../utils/Preloder';
             </View>
             <View style={styles.bottomCard}>
               <Text style={styles.team}> {story.team}</Text>
+              <Text style={styles.postDate}> Posted by - {moment(story.date).format("d MMMM YYYY")}</Text>
             </View>
           </TouchableOpacity>
          )
@@ -65,14 +75,20 @@ const styles = StyleSheet.create({
     padding:10
   },
   bottomCard:{
-    color:"#232323",
-    fontSize:5,
-    padding:5
-  },
+    flex:1,
+    flexDirection:"row",
+    borderTopWidth:1,
+    borderTopColor:"#E6E6E6",
+    padding:10
+  }, 
   team:{
-    color:"#231233",
+   color:"#828282",
+   fontSize:12
   },
-  
+  postDate:{
+    color:"#828282",
+    fontSize:12
+  }
 });
 
 
