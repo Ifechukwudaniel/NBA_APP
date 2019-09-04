@@ -70,6 +70,7 @@ const styles = StyleSheet.create({
     borderColor:"#dddddd"
   },
   titleCard:{
+    fontFamily: 'Roboto-Bold',
     color:"#232323",
     fontSize:16,
     padding:10
@@ -82,10 +83,12 @@ const styles = StyleSheet.create({
     padding:10
   }, 
   team:{
+   fontFamily: 'Roboto-Medium',
    color:"#828282",
    fontSize:12
   },
   postDate:{
+    fontFamily: 'Roboto-Light',
     color:"#828282",
     fontSize:12
   }
