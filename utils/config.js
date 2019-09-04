@@ -40,7 +40,6 @@ export const FirebaseData= (data)=>{
             ...data[key]
     })
     }
-    console.log(newArray)
     return newArray;
 }
 

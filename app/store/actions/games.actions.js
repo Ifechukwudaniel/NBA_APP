@@ -19,12 +19,10 @@ export const getAllGames=()=>{
                         localTeam: findTeamRelationship(games[key].away, teams),
                     }) 
                  }
-                 console.log(responseDate)
                  resolve(responseDate)
             })
         })
         .catch(e=>{
-             console.log(e)
             reject(false)
         })
   })
