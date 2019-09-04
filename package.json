@@ -10,6 +10,7 @@
   "dependencies": {
     "@react-native-community/async-storage": "^1.6.1",
     "axios": "^0.19.0",
+    "jquery": "^3.4.1",
     "moment": "^2.24.0",
     "react": "16.8.6",
     "react-native": "0.60.5",
@@ -37,10 +38,10 @@
   "jest": {
     "preset": "react-native"
   },
-  "rnpm":{
-       "assets":[
-         "./assets/Fonts/"
-       ]
+  "rnpm": {
+    "assets": [
+      "./assets/Fonts/"
+    ]
   },
   "main": "index.js",
   "author": "CodesDaniel <mailidanielifechukwu@gmail.com>",
