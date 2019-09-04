@@ -32,3 +32,20 @@ export const  getTokens=(cb)=>{
     })
 } 
 
+export const FirebaseData= (data)=>{
+    let newArray=[]
+    for (const key in data) {
+    newArray.push({
+            id:key,
+            ...data[key]
+    })
+    }
+    console.log(newArray)
+    return newArray;
+}
+
+export const findTeamRelationship  = (teamId,teamsList )=>{
+ return teamsList.find((team)=>{
+      return  team.id===teamId
+   })
+}

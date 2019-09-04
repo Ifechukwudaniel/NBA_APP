@@ -1,9 +1,10 @@
 
 
 import React, {Component} from 'react';
-import { View,Text, StyleSheet,} from 'react-native';
+import { View,Text, StyleSheet,ScrollView} from 'react-native';
 import {connect} from "react-redux"
 import { getAllGames } from '../../store/actions/games.actions';
+import Preloader from "../../../utils/Preloder"
 
  class GamesComponent extends Component {  
    
@@ -11,11 +12,21 @@ import { getAllGames } from '../../store/actions/games.actions';
     this.props.dispatch(getAllGames())
   }
   
+  listGames=(games)=>(
+    games?
+    games.map(data=>(
+        <Text key={data.id}> am working</Text>
+    ))
+    : 
+    <Preloader/>
+  )
+
+
   render() {    
     return (
-      <View>
-        <Text> The Games Component</Text>
-      </View>   
+      <ScrollView style={styles.container}>
+        {this.listGames(this.props.Games.games)}
+      </ScrollView>   
     )
   }
 }

@@ -6,7 +6,7 @@ export default (state = {}, action) => {
         case GET_ALL_GAMES:
             return {
                 ...state,
-                ...action.payload
+                 games:action.payload ||false
             }
         default:
             return state
