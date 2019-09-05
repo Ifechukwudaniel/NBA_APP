@@ -33,9 +33,11 @@
 #### iOS：
 1. Check the [official doc](https://facebook.github.io/react-native/docs/running-on-device) first, the following steps are based on official doc
 
-2.Run `$ react-native run-ios`
+2. Run `$ react-native run-ios`
+
 3. It's a very easy
-4.There are errors for android
+
+4. There are errors for android
 
 
 
