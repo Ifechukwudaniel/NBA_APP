@@ -16,7 +16,7 @@ export const getAllGames=()=>{
                     responseDate.push({
                         ...games[key],
                         awayTeam: findTeamRelationship(games[key].away, teams),
-                        localTeam: findTeamRelationship(games[key].away, teams),
+                        localTeam: findTeamRelationship(games[key].local, teams),
                     }) 
                  }
                  resolve(responseDate)

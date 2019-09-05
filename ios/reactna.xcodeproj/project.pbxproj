@@ -5,8 +5,10 @@
 	};
 	objectVersion = 46;
 	objects = {
+
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* reactnaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* reactnaTests.m */; };
+		0132A233364B45DDB4C65553 /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 72C8D805E239437BBE8944CB /* Roboto-Black.ttf */; };
 		09797DF2AE10411E9E1AB93D /* EvilIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 05C7BA0EEBF54198998BF10D /* EvilIcons.ttf */; };
 		12289B97A8BB43A3AD793F27 /* Feather.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6BF00174CABA4F5988775EE8 /* Feather.ttf */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
@@ -19,11 +21,18 @@
 		2D9B23777BBE97C325B079DD /* libPods-reactna.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9859595D0A3CA5D19EB4FE99 /* libPods-reactna.a */; };
 		2DCD954D1E0B4F2C00145EB5 /* reactnaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* reactnaTests.m */; };
 		2E3F836F459641A6A8E511E5 /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 42B61A60176E495683331504 /* Zocial.ttf */; };
+		3A1596A91F594D9E9E6FFEB7 /* Roboto-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B88D6E28726246D88CD72574 /* Roboto-BlackItalic.ttf */; };
 		3C9FD5FB58DE41A68066E3B3 /* FontAwesome5_Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A20B5DB5D01B4BDFAD268B26 /* FontAwesome5_Regular.ttf */; };
+		4192BAB59ED74DD0AEDCF743 /* Roboto-RegularItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8ED1811D43644DA9A6DF01D4 /* Roboto-RegularItalic.ttf */; };
+		4A54918F2B454F1989BF1C8D /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A06E34AF3EED4253A9E25352 /* Roboto-Regular.ttf */; };
 		4F017372374E0FD25292CEFD /* libPods-reactna-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4750DA0E6F57578E4872B8B9 /* libPods-reactna-tvOSTests.a */; };
+		543B9FCA46954031AED8C3A7 /* Roboto-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 455AFF5477C14459B5C70DEC /* Roboto-ThinItalic.ttf */; };
+		5EA511A99EF04F32A857E851 /* Roboto-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B639B72B210947F3BCA6C253 /* Roboto-LightItalic.ttf */; };
 		69E77D5C546045E182C5FB55 /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 34A7FCECB01C4CE9AE5BD77B /* Foundation.ttf */; };
 		74724AFFCC8D4DB79D1B0326 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A0D107ACD9374D6FA1B85225 /* FontAwesome.ttf */; };
+		7D47ACCF29B34DD0B8529ABB /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 143B82D600C64135B1F25FA1 /* Roboto-Medium.ttf */; };
 		82521A6BFBEB43B08883F6A4 /* AntDesign.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6863B1213E0D4D2792DE5B05 /* AntDesign.ttf */; };
+		84EAC395B1FC418FA91AE69A /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9054F23A855048B096553508 /* Roboto-Light.ttf */; };
 		864478DE07614E45BE182641 /* MaterialCommunityIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FBC2DA8226204F3FB3944403 /* MaterialCommunityIcons.ttf */; };
 		98D0B42F17224F7195F61AEA /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EDF4E819AD4147FB8FA6A6C5 /* Entypo.ttf */; };
 		9CFD320F3868448CAC0D473D /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D26276418BE248A6B9B285AD /* SimpleLineIcons.ttf */; };
@@ -47,22 +56,14 @@
 		C19244AEA37D42F8973FBC5D /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AC4A8D764253448A82EEA7D4 /* MaterialIcons.ttf */; };
 		C4A324E193104433B7387942 /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A9E31DB7A9904987B8FC85AF /* Octicons.ttf */; };
 		CF76BC222430261BDA4626CF /* libPods-reactnaTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E0548CF9F25CCDD46A34112 /* libPods-reactnaTests.a */; };
+		D35DAA6D72D24E8B9D3E9E94 /* Roboto-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FFEEC93810C24C82B1925181 /* Roboto-BoldItalic.ttf */; };
 		E06F498BA7AB4AF69FE89537 /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5F03A6A148C7440F92EC29F5 /* Ionicons.ttf */; };
+		EACFA0E162574F4CAAF2AF08 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DD13B16D4A44434BA315BD6C /* Roboto-Bold.ttf */; };
+		F0EB9BDAAF0D4C59A46C14FF /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11A49BC3945C467588A182FB /* Roboto-Thin.ttf */; };
 		F25C38E4396C464693120DF8 /* FontAwesome5_Brands.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6EA70FD8C8E3482E94389A34 /* FontAwesome5_Brands.ttf */; };
+		F37A325047424C71895E5FC0 /* Roboto-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 90EE55694FFD474A833CE14A /* Roboto-MediumItalic.ttf */; };
 		F9D7DA5254A54494A9952AF3 /* Fontisto.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C4AE0DA70CE546EFA1F54235 /* Fontisto.ttf */; };
 		FA61EB5D4B2417CEEAD4770D /* libPods-reactna-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D08996AF8F74662FFE82EBE4 /* libPods-reactna-tvOS.a */; };
-		0132A233364B45DDB4C65553 /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 72C8D805E239437BBE8944CB /* Roboto-Black.ttf */; };
-		3A1596A91F594D9E9E6FFEB7 /* Roboto-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B88D6E28726246D88CD72574 /* Roboto-BlackItalic.ttf */; };
-		EACFA0E162574F4CAAF2AF08 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DD13B16D4A44434BA315BD6C /* Roboto-Bold.ttf */; };
-		D35DAA6D72D24E8B9D3E9E94 /* Roboto-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FFEEC93810C24C82B1925181 /* Roboto-BoldItalic.ttf */; };
-		84EAC395B1FC418FA91AE69A /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9054F23A855048B096553508 /* Roboto-Light.ttf */; };
-		5EA511A99EF04F32A857E851 /* Roboto-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B639B72B210947F3BCA6C253 /* Roboto-LightItalic.ttf */; };
-		7D47ACCF29B34DD0B8529ABB /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 143B82D600C64135B1F25FA1 /* Roboto-Medium.ttf */; };
-		F37A325047424C71895E5FC0 /* Roboto-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 90EE55694FFD474A833CE14A /* Roboto-MediumItalic.ttf */; };
-		4A54918F2B454F1989BF1C8D /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A06E34AF3EED4253A9E25352 /* Roboto-Regular.ttf */; };
-		4192BAB59ED74DD0AEDCF743 /* Roboto-RegularItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8ED1811D43644DA9A6DF01D4 /* Roboto-RegularItalic.ttf */; };
-		F0EB9BDAAF0D4C59A46C14FF /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11A49BC3945C467588A182FB /* Roboto-Thin.ttf */; };
-		543B9FCA46954031AED8C3A7 /* Roboto-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 455AFF5477C14459B5C70DEC /* Roboto-ThinItalic.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +89,7 @@
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* reactnaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = reactnaTests.m; sourceTree = "<group>"; };
 		05C7BA0EEBF54198998BF10D /* EvilIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = EvilIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; };
+		11A49BC3945C467588A182FB /* Roboto-Thin.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Thin.ttf"; path = "../assets/Fonts/Roboto-Thin.ttf"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* reactna.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = reactna.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = reactna/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = reactna/AppDelegate.m; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = reactna/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = reactna/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = reactna/main.m; sourceTree = "<group>"; };
+		143B82D600C64135B1F25FA1 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Medium.ttf"; path = "../assets/Fonts/Roboto-Medium.ttf"; sourceTree = "<group>"; };
 		1E0548CF9F25CCDD46A34112 /* libPods-reactnaTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-reactnaTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		27F0DC181E0DF96F29613D39 /* Pods-reactnaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-reactnaTests.release.xcconfig"; path = "Target Support Files/Pods-reactnaTests/Pods-reactnaTests.release.xcconfig"; sourceTree = "<group>"; };
 		2D02E47B1E0B4A5D006451C7 /* reactna-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "reactna-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -102,6 +105,7 @@
 		2DFB56EC24CB854406459A3E /* Pods-reactna.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-reactna.debug.xcconfig"; path = "Target Support Files/Pods-reactna/Pods-reactna.debug.xcconfig"; sourceTree = "<group>"; };
 		34A7FCECB01C4CE9AE5BD77B /* Foundation.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Foundation.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Foundation.ttf"; sourceTree = "<group>"; };
 		42B61A60176E495683331504 /* Zocial.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Zocial.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Zocial.ttf"; sourceTree = "<group>"; };
+		455AFF5477C14459B5C70DEC /* Roboto-ThinItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-ThinItalic.ttf"; path = "../assets/Fonts/Roboto-ThinItalic.ttf"; sourceTree = "<group>"; };
 		4750DA0E6F57578E4872B8B9 /* libPods-reactna-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-reactna-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F03A6A148C7440F92EC29F5 /* Ionicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Ionicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf"; sourceTree = "<group>"; };
 		60B4899538B8BE58EF710DE8 /* Pods-reactna.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-reactna.release.xcconfig"; path = "Target Support Files/Pods-reactna/Pods-reactna.release.xcconfig"; sourceTree = "<group>"; };
@@ -109,9 +113,14 @@
 		6863B1213E0D4D2792DE5B05 /* AntDesign.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = AntDesign.ttf; path = "../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf"; sourceTree = "<group>"; };
 		6BF00174CABA4F5988775EE8 /* Feather.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Feather.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Feather.ttf"; sourceTree = "<group>"; };
 		6EA70FD8C8E3482E94389A34 /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Brands.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Brands.ttf"; sourceTree = "<group>"; };
+		72C8D805E239437BBE8944CB /* Roboto-Black.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Black.ttf"; path = "../assets/Fonts/Roboto-Black.ttf"; sourceTree = "<group>"; };
 		73AB7502FE244EC290A03A46 /* Pods-reactna-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-reactna-tvOS.release.xcconfig"; path = "Target Support Files/Pods-reactna-tvOS/Pods-reactna-tvOS.release.xcconfig"; sourceTree = "<group>"; };
 		85C7C3C5F66F367E0C16FB3D /* Pods-reactnaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-reactnaTests.debug.xcconfig"; path = "Target Support Files/Pods-reactnaTests/Pods-reactnaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8ED1811D43644DA9A6DF01D4 /* Roboto-RegularItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-RegularItalic.ttf"; path = "../assets/Fonts/Roboto-RegularItalic.ttf"; sourceTree = "<group>"; };
+		9054F23A855048B096553508 /* Roboto-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Light.ttf"; path = "../assets/Fonts/Roboto-Light.ttf"; sourceTree = "<group>"; };
+		90EE55694FFD474A833CE14A /* Roboto-MediumItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-MediumItalic.ttf"; path = "../assets/Fonts/Roboto-MediumItalic.ttf"; sourceTree = "<group>"; };
 		9859595D0A3CA5D19EB4FE99 /* libPods-reactna.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-reactna.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A06E34AF3EED4253A9E25352 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Regular.ttf"; path = "../assets/Fonts/Roboto-Regular.ttf"; sourceTree = "<group>"; };
 		A0D107ACD9374D6FA1B85225 /* FontAwesome.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; };
 		A185813B231E5F4300EC3137 /* Fontisto.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Fontisto.ttf; sourceTree = "<group>"; };
 		A185813C231E5F4300EC3137 /* Octicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Octicons.ttf; sourceTree = "<group>"; };
@@ -132,28 +141,20 @@
 		A20B5DB5D01B4BDFAD268B26 /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Regular.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf"; sourceTree = "<group>"; };
 		A9E31DB7A9904987B8FC85AF /* Octicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Octicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Octicons.ttf"; sourceTree = "<group>"; };
 		AC4A8D764253448A82EEA7D4 /* MaterialIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; };
+		B639B72B210947F3BCA6C253 /* Roboto-LightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-LightItalic.ttf"; path = "../assets/Fonts/Roboto-LightItalic.ttf"; sourceTree = "<group>"; };
+		B88D6E28726246D88CD72574 /* Roboto-BlackItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-BlackItalic.ttf"; path = "../assets/Fonts/Roboto-BlackItalic.ttf"; sourceTree = "<group>"; };
 		C184855404B130997B6736E3 /* Pods-reactna-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-reactna-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-reactna-tvOSTests/Pods-reactna-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C4AE0DA70CE546EFA1F54235 /* Fontisto.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Fontisto.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Fontisto.ttf"; sourceTree = "<group>"; };
 		CA27EFEAD60920CF9438A477 /* Pods-reactna-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-reactna-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-reactna-tvOS/Pods-reactna-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 		D08996AF8F74662FFE82EBE4 /* libPods-reactna-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-reactna-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D26276418BE248A6B9B285AD /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = SimpleLineIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; };
 		D96894F8F54A4E6C3168D4F0 /* Pods-reactna-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-reactna-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-reactna-tvOSTests/Pods-reactna-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		DD13B16D4A44434BA315BD6C /* Roboto-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Bold.ttf"; path = "../assets/Fonts/Roboto-Bold.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
 		EDF4E819AD4147FB8FA6A6C5 /* Entypo.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Entypo.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Entypo.ttf"; sourceTree = "<group>"; };
 		FBC2DA8226204F3FB3944403 /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialCommunityIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf"; sourceTree = "<group>"; };
-		72C8D805E239437BBE8944CB /* Roboto-Black.ttf */ = {isa = PBXFileReference; name = "Roboto-Black.ttf"; path = "../assets/Fonts/Roboto-Black.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		B88D6E28726246D88CD72574 /* Roboto-BlackItalic.ttf */ = {isa = PBXFileReference; name = "Roboto-BlackItalic.ttf"; path = "../assets/Fonts/Roboto-BlackItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		DD13B16D4A44434BA315BD6C /* Roboto-Bold.ttf */ = {isa = PBXFileReference; name = "Roboto-Bold.ttf"; path = "../assets/Fonts/Roboto-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		FFEEC93810C24C82B1925181 /* Roboto-BoldItalic.ttf */ = {isa = PBXFileReference; name = "Roboto-BoldItalic.ttf"; path = "../assets/Fonts/Roboto-BoldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		9054F23A855048B096553508 /* Roboto-Light.ttf */ = {isa = PBXFileReference; name = "Roboto-Light.ttf"; path = "../assets/Fonts/Roboto-Light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		B639B72B210947F3BCA6C253 /* Roboto-LightItalic.ttf */ = {isa = PBXFileReference; name = "Roboto-LightItalic.ttf"; path = "../assets/Fonts/Roboto-LightItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		143B82D600C64135B1F25FA1 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; name = "Roboto-Medium.ttf"; path = "../assets/Fonts/Roboto-Medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		90EE55694FFD474A833CE14A /* Roboto-MediumItalic.ttf */ = {isa = PBXFileReference; name = "Roboto-MediumItalic.ttf"; path = "../assets/Fonts/Roboto-MediumItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		A06E34AF3EED4253A9E25352 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; name = "Roboto-Regular.ttf"; path = "../assets/Fonts/Roboto-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		8ED1811D43644DA9A6DF01D4 /* Roboto-RegularItalic.ttf */ = {isa = PBXFileReference; name = "Roboto-RegularItalic.ttf"; path = "../assets/Fonts/Roboto-RegularItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		11A49BC3945C467588A182FB /* Roboto-Thin.ttf */ = {isa = PBXFileReference; name = "Roboto-Thin.ttf"; path = "../assets/Fonts/Roboto-Thin.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		455AFF5477C14459B5C70DEC /* Roboto-ThinItalic.ttf */ = {isa = PBXFileReference; name = "Roboto-ThinItalic.ttf"; path = "../assets/Fonts/Roboto-ThinItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		FFEEC93810C24C82B1925181 /* Roboto-BoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-BoldItalic.ttf"; path = "../assets/Fonts/Roboto-BoldItalic.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -377,7 +378,6 @@
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				C41A172E7624D9D451CBA598 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -644,54 +644,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C41A172E7624D9D451CBA598 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-reactna/Pods-reactna-resources.sh",
-				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf",
-				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Entypo.ttf",
-				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf",
-				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Feather.ttf",
-				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf",
-				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Brands.ttf",
-				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf",
-				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Solid.ttf",
-				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Fontisto.ttf",
-				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Foundation.ttf",
-				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf",
-				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf",
-				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf",
-				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Octicons.ttf",
-				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf",
-				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Zocial.ttf",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AntDesign.ttf",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Entypo.ttf",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/EvilIcons.ttf",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Feather.ttf",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome.ttf",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome5_Brands.ttf",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome5_Regular.ttf",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome5_Solid.ttf",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Fontisto.ttf",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Foundation.ttf",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Ionicons.ttf",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MaterialCommunityIcons.ttf",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MaterialIcons.ttf",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Octicons.ttf",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SimpleLineIcons.ttf",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Zocial.ttf",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-reactna/Pods-reactna-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		D8B500F6768B53A2D27D6B44 /* [CP] Check Pods Manifest.lock */ = {
