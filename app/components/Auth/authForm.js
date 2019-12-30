@@ -184,7 +184,7 @@ class AuthForm extends Component {
                    onPress={this.changeFormType}/>
                </View>
                <View style={styles.button} >
-                   <Button title="I will Do It letter" 
+                   <Button title="I will do it letter" 
                    onPress={this.props.goNext}/>
                </View>
             </View>
