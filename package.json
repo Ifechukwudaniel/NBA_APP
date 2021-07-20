@@ -13,7 +13,7 @@
     "jquery": "^3.4.1",
     "moment": "^2.24.0",
     "react": "16.8.6",
-    "react-native": "0.60.5",
+    "react-native": "0.62.3",
     "react-native-contacts": "^5.0.2",
     "react-native-device-info": "^2.3.2",
     "react-native-gesture-handler": "^1.4.1",
